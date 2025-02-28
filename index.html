@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Sample, Producer, Production Manager, Film Editing Head</title>
+    <style>
+        /* Set dark pink background */
+        body {
+            background-color: #e91e63; /* Dark pink background */
+            color: white; /* White text color for contrast */
+            font-family: 'Arial', sans-serif; /* Set font for text */
+            margin: 0;
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center; /* Center align items horizontally */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header container to hold profile image and text */
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border: 5px solid white;
+            padding: 20px;
+            margin-bottom: 40px;
+            width: 80%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto; /* Center the header */
+            border-radius: 15px; /* Rounded corners for the header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a modern look */
+        }
+
+        /* Profile Image Styling with Border */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Make the image round */
+            border: 5px solid white;
+            margin-right: 20px;
+        }
+
+        /* Name and Position Text Styling */
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .position {
+            font-size: 20px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Styling for the video container */
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap; /* Allow the videos to wrap on smaller screens */
+            max-width: 3000px; /* Limit the max width of the video container */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Video iframe styling */
+        iframe {
+            border: none;
+            width: 500%; /* Make the videos responsive */
+            height: 200px; /* Fixed height to maintain landscape orientation */
+            max-width: 1000px; /* Limit the width of videos */
+            margin-bottom: 20px;
+            border-radius: 10px; /* Rounded corners for the video */
+        }
+
+        /* Contact Section Styling */
+        .contact {
+            margin-top: 50px;
+            font-size: 20px;
+            padding: 30px;
+            width: 80%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-top: 2px solid white;
+            background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+            border-radius: 10px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; /* Stack profile image and text on small screens */
+                text-align: center;
+            }
+
+            .video-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 70px;
+            }
+
+            iframe {
+                width: 200%;
+                max-width: 100%; /* Adjust video width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Profile Image with Border -->
+        <a href="https://ibb.co/rRMZG7BY">
+            <img class="profile-image" src="https://i.ibb.co/rRMZG7BY/IMG-3429-removebg-preview.png" alt="Profile Image">
+        </a>
+        <!-- Name and Position Text -->
+        <div>
+            <h2>ALOHA ERICAK ROYSE PEÑALOSA</h2>
+            <p class="position">Producer, Production Manager, Film Editing Head</p>
+        </div>
+    </header>
+
+    <h1>Producer, Production Manager, Film Editing Head, Actress</h1>
+
+    <h2>Videos:</h2>
+    <div class="video-container">
+        <div>
+            <h3>Duman (THERE) Film Sample</h3>
+            <iframe src="https://drive.google.com/file/d/1SdHlJqN-VWmbOQujQF8LeNni-VZgTVcS/preview" allow="autoplay" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h3>Mersi (DOÑA Mercedes) Film Sample</h3>
+            <iframe src="https://drive.google.com/file/d/1mc7fZirm1jjgAUodDjF_qgaT7mOvrmkY/preview" allow="autoplay" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h3>Duman Trailer</h3>
+            <iframe src="https://drive.google.com/file/d/1b-_AgMRjoKx56e86mEfxKv1XCOogp7o0/preview" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:alohabusinemail@gmail.com">alohabusinemail@gmail.com</a></p>
+        <p>Phone: <a href="tel:+639668363396">(+63) 9668363396</a></p>
+    </div>
+</body>
+</html>
